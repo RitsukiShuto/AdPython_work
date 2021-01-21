@@ -9,8 +9,8 @@ if len(sys.argv) != 2:
     sys.exit()
 
 img = cv2.imread(sys.argv[1])
-fdata = cv2.CascadeClassifier('data/haarcascade_frontalface_default.xml')   # BUG
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+fdata = cv2.CascadeClassifier('./data/haarcascade_frontalface_default.xml')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faces = fdata.detectMultiScale(gray, 1.3, 5)
 
