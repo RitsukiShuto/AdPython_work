@@ -2,7 +2,6 @@
 # order1931074.py
 #
 class Order():
-    # 3つのインスタンスを生成
     def __init__(self, l, n, m):
         self.x = l
         self.y = n
